@@ -1,0 +1,182 @@
+/*.topnav {
+  background-color: #1089ff;
+  overflow: hidden;*/
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #7e0cf5
+  color: black;
+}
+.topnav a.active {
+  background-color: #23374d;
+  color: white;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+body {
+    margin: 0;
+    margin-top: 50px;
+    font-family: sans-serif;
+    font-family: "Times New Roman", Times, serif;
+}
+li{
+  list-style-type: none;
+  margin: 0 2vw;
+  font-size: 3vh;
+}
+a {
+  text-decoration: none;
+  color: black;
+  padding: 1vw;
+  font-family: monospace;
+}
+a:hover{
+  background-color: #05dfd7;
+}
+@media only screen and (max-width: 500px) {
+  ul{
+    flex-direction: column;
+  }
+  li{
+    margin: 0;
+  }
+ a{
+    display: block;
+  }
+}
+.class {
+	font-family: Futura,Trebuchet MS,Arial,sans-serif;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color:#00a8cc ;
+}
+
+header * {
+    display: inline;
+    height: 50px;
+    background-color:#00a8cc ;
+}
+
+header ul {
+    padding: 0;
+}
+
+header li {
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
+section {
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color:#00a8cc ;
+}
+
+#hero .profile-img {
+    width: 300px;
+    border-radius: 50%;
+
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+}
+
+#hero h1 {
+    font-size: 3em;
+    font-style: italic;
+    color: ;
+}
+
+section h2 {
+    text-decoration: underline;
+    font-size: 2.5em;
+    font-family: "Times New Roman", Times, serif;
+}
+
+section h3 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2em;
+    text-decoration: underline;
+}
+p{
+  font-size: 40px
+
+}
+p.standout {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+}
+li {
+  font-size: 40px;
+  color: #00a8cc;
+  }
+  #where h5 {
+  animation-duration: 6s;
+  animation-name: slidein;
+}
+#rates h1 {
+animation-duration: 6s;
+animation-name: slidein;
+}
+#where h1{
+animation-duration: 6s;
+animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+#header {
+    background-image: linear-gradient(rgba(125,255,255,0.55),rgba(125,255,255,0.55)), url('https://adwallpapers.xyz/uploads/posts/72281-hotel-and-ocean-4k-ultra-hd-wallpaper__other.jpg');
+  }
+
+#rates {
+    background-image: linear-gradient(rgba(125,255,255,0.55),rgba(125,255,255,0.55)), url('https://pixelz.cc/wp-content/uploads/2018/12/grand-lisboa-hotel-and-casino-macau-china-uhd-4k-wallpaper.jpg');
+  }
+
+#where {
+    background-image: linear-gradient(rgba(125,255,255,0.55),rgba(125,255,255,0.55)), url('https://besthqwallpapers.com/img/original/38460/rixos-premium-hotel-4k-nightscapes-dubai-uae.jpg');
+  }
+
+#estimates {
+  background-image: linear-gradient(rgba(125,255,255,0.55),rgba(125,255,255,0.55)), url('https://cdn.wallpapersafari.com/16/3/JrTWjq.jpg');
+}
+#about {
+  background-image: linear-gradient(rgba(125,255,255,0.55),rgba(125,255,255,0.55)), url('https://i.redd.it/039j8gd00xg01.jpg');
