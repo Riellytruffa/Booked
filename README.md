@@ -1,2 +1,0 @@
-# Booked
-Hotel booking website 
