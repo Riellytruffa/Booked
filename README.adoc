@@ -1,6 +1,6 @@
 # Welcome to Booked!
 
-image:https://scontent.fewr1-5.fna.fbcdn.net/v/t1.0-9/89654886_1073887036304523_1668760747737350144_o.jpg?_nc_cat=104&_nc_sid=8024bb&_nc_ohc=ZZ9WvFdcOxMAX_TM8mi&_nc_ht=scontent.fewr1-5.fna&oh=8abbbc4bc0c556e2c25c182f3b194702&oe=5E96DCFC
+image: :https://scontent.fewr1-5.fna.fbcdn.net/v/t1.0-9/89654886_1073887036304523_1668760747737350144_o.jpg?_nc_cat=104&_nc_sid=8024bb&_nc_ohc=ZZ9WvFdcOxMAX_TM8mi&_nc_ht=scontent.fewr1-5.fna&oh=8abbbc4bc0c556e2c25c182f3b194702&oe=5E96DCFC
  
 ## What is Booked? 
 Here at Booked we are commited to making traveling as easy as possible by providing accurate rates for hotels with minimal information needed from the client. 
