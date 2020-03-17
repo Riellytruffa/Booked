@@ -2,6 +2,7 @@
 <html>
 <head>
   <title> Booked </title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,6 +22,13 @@
 <section id="header">
   <div class ="section-inner">
 <h1>Welcome to Booked!</h1>
+<div ng-app="">
+      <p>Lets get Started</p>
+      <p>Please enter your name: <input type="text" ng-model="name" placeholder="name"</p>
+      <p>Where would you like to go? <input type="text" ng-model="name2" placeholder="Where?"</p>
+      <h1>Hello {{name}}!</h1>
+      <h1>Lets see whats available in {{name2}}!</h1>
+    </div>
 <p>Making your hotel finding expereince less aggravating since 2020</p>
 </div>
 </section>
