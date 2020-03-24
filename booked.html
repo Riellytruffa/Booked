@@ -1,56 +1,96 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title> Booked </title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header>
-  <nav>
+  <header>
+    <nav>
       <nav>
         <ul>
-        <div class="topnav">
-        <a class="active" href="#header">Home</a>
-        <a href="#rates">Rates</a>
-        <a href="#where">Locations</a>
-        <a href="#estimates">Estimates</a>
-        <a href="#about">About Us</a>
-        </div>
-        </nav>
-</header>
-<section id="header">
-  <div class ="section-inner">
-<h1>Welcome to Booked!</h1>
-<div ng-app="">
-      <p>Lets get Started</p>
-      <p>Please enter your name: <input type="text" ng-model="name" placeholder="name"</p>
-      <p>Where would you like to go? <input type="text" ng-model="name2" placeholder="Where?"</p>
-      <h1>Hello {{name}}!</h1>
-      <h1>Lets see whats available in {{name2}}!</h1>
+          <div class="topnav">
+            <a class="active" href="#header">Home</a>
+            <a href="#rates">Rates</a>
+            <a href="#where">Locations</a>
+            <a href="#estimates">Estimates</a>
+            <a href="#about">About Us</a>
+          </div>
+      </nav>
+  </header>
+  <section id="header">
+    <div class="section-inner">
+      <h1>Welcome to Booked!</h1>
+      <div ng-app="">
+        <p>Lets get Started</p>
+        <p>Please enter your name: <input type="text" ng-model="name" placeholder="name" </p> <p>Where would you like to go? <input type="text" ng-model="name2" placeholder="Where?" </p> <h1>Hello {{name}}!</h1>
+          <h1>Lets see whats available in {{name2}}!</h1>
+      </div>
+      <p>Making your hotel finding expereince less aggravating since 2020</p>
     </div>
-<p>Making your hotel finding expereince less aggravating since 2020</p>
-</div>
-</section>
-<section id="rates">
-  <div class="section-inner">
-    <h1>Check out our rates!</h1>
+  </section>
+  <section id="rates">
+    <div class="section-inner">
+      <h1>Check out our rates!</h1>
+      <div ng-app="myApp" ng-controller="formCtrl">
+        <form novalidate>
+          <h1> budget:</h1><br>
+          <input type="text" ng-model="user.firstName"><br>
+          <br><br>
+          <button ng-click="reset()">RESET</button>
+        </form>
+      </div>
+
+
     </div>
   </section>
   <section id="where">
     <div class="section-inner">
       <h1>Where you can go!</h1>
+      <div ng-app="myApp" ng-controller="customersCtrl">
+
+        <table>
+          <tr ng-repeat="x in names, Country = {x: 'France'}">
+            <td>{{ x.Country }}</td>
+          </tr>
+        </table>
+
+
       </div>
-    </section>
-    <section id="estimates">
-      <div class="section-inner">
-        <h1>Calculate a trip!</h1>
-        </div>
-      </section>
-      <section id="about">
-        <div class="section-inner">
-          <h1>Who we are!</h1>
-          </div>
-        </section>
-      </body>
+
+    </div>
+    </div>
+  </section>
+  <section id="estimates">
+    <div class="section-inner">
+      <h1>Calculate a trip!</h1>
+      <div ng-app="myApp" ng-controller="formCtrl">
+        <form novalidate>
+          <a> Where?</a><br>
+          <input type="text" ng-model="user.firstName"><br>
+          <br><br>
+          <button ng-click="reset()">RESET</button>
+        </form>
+      </div>
+      <div ng-app="myApp" ng-controller="formCtrl">
+        <form novalidate>
+          <a> How many?</a><br>
+          <input type="text" ng-model="user.firstName"><br>
+          <br><br>
+          <button ng-click="reset()">RESET</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+  <section id="about">
+    <div class="section-inner">
+      <h1>Who we are!</h1>
+    </div>
+  </section>
+</body>
+
 </html>
